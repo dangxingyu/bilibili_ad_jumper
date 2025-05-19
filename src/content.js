@@ -312,7 +312,8 @@ async function handleJumpButtonClick() {
             
             if (jumpTime !== null) {
               videoElement.currentTime = jumpTime;
-              showFeedback(`已空降到 ${formatTime(jumpTime)} (${response.patternResult.voteCount} 次推荐)`);
+              // showFeedback(`已空降到 ${formatTime(jumpTime)} (${response.patternResult.voteCount} 次推荐)`);
+              showFeedback(`已空降到 ${formatTime(jumpTime)}`);
             } else {
               showFeedback("未找到空降点");
             }
