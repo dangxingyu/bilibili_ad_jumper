@@ -85,7 +85,7 @@
 
 1. **下载代码**
    ```bash
-   git clone https://github.com/your-username/bilibili_ad_jumper_package.git
+   git clone https://github.com/dangxingyu/bilibili_ad_jumper_package.git
    ```
 
 2. **加载扩展**
@@ -278,9 +278,9 @@ python crawler.py BV1234567890 your_sessdata output.json
 </p>
 
 <p align="center">
-  <a href="https://github.com/your-username/bilibili_ad_jumper_package/issues">报告问题</a> •
-  <a href="https://github.com/your-username/bilibili_ad_jumper_package/pulls">提交 PR</a> •
-  <a href="https://github.com/your-username/bilibili_ad_jumper_package/releases">下载发布</a>
+  <a href="https://github.com/dangxingyu/bilibili_ad_jumper_package/issues">报告问题</a> •
+  <a href="https://github.com/dangxingyu/bilibili_ad_jumper_package/pulls">提交 PR</a> •
+  <a href="https://github.com/dangxingyu/bilibili_ad_jumper_package/releases">下载发布</a>
 </p>
 
 <p align="center">
