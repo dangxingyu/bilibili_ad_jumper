@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>B站空降广告跳转助手 - 设置</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding: 20px;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fafafa;
+    }
+    h1 {
+      color: #00a1d6;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+    .option-group {
+      margin-bottom: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .option-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .option-description {
+      color: #666;
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #00a1d6;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #0091c2;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      display: none;
+    }
+    .success {
+      background-color: #e6f7e9;
+      color: #2e7d32;
+      display: block;
+    }
+    .error {
+      background-color: #fdecea;
+      color: #c62828;
+      display: block;
+    }
+    .notice {
+      font-size: 12px;
+      color: #888;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h1>B站空降广告跳转助手 - 设置</h1>
+  
+  <div class="option-group">
+    <div class="option-title">B站SESSDATA凭证（可选）</div>
+    <div class="option-description">
+      如果选择获取历史弹幕，需要提供B站登录凭证。<br>
+      <strong>注意：</strong> 出于安全考虑，此数据仅保存在本地，不会上传至任何服务器。
+    </div>
+    <input type="text" id="sessdataInput" placeholder="请输入SESSDATA值（仅用于获取历史弹幕）">
+    <div class="option-description" style="font-size: 12px; color: #888;">
+      如何获取：登录B站 -> F12打开开发者工具 -> Application（应用）标签 -> Cookies -> bilibili.com -> 找到SESSDATA的值 -> 复制
+    </div>
+  </div>
+  
+  <div class="option-group">
+    <div class="option-title">预加载设置</div>
+    <div class="option-description">
+      配置是否在打开视频页面时自动预加载弹幕，以及加载的时间范围。
+    </div>
+    <label style="display: flex; align-items: center;">
+      <input type="checkbox" id="prefetchEnabled" style="margin-right: 8px;"> 
+      自动预加载弹幕（打开视频页面时自动获取并缓存弹幕）
+    </label>
+    <div style="margin-top: 15px;">
+      <label for="daysToFetch">弹幕时间范围（天）：</label>
+      <input type="number" id="daysToFetch" min="1" max="30" value="7" style="width: 100px;">
+      <div class="option-description" style="font-size: 12px; color: #888; margin-top: 5px;">
+        获取最近几天的弹幕数据，范围1-30天，默认7天
+      </div>
+    </div>
+  </div>
+  
+  <button id="saveButton">保存设置</button>
+  <div id="statusMessage" class="status"></div>
+  
+  <div class="notice">
+    注意：获取弹幕需要您已登录B站或手动配置SESSDATA。
+    请确保已在B站网页登录，或在上方输入框中提供有效的SESSDATA凭证。
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

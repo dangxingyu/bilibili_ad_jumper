@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Styling for the jump button if more complex styling is needed */
+#bilibili-danmaku-jumper-button {
+  /* Styles are mostly inline in content.js for simplicity, but can be moved here */
+  /* Example of an additional style or override */
+  font-weight: bold;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  /* Ensure button doesn't stretch in flex containers */
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+#bilibili-danmaku-jumper-button:hover {
+  background-color: #007ead !important; /* Darker shade on hover */
+  opacity: 0.9;
+}
+
+#bilibili-danmaku-jumper-button:disabled {
+  background-color: #cccccc !important;
+  color: #666666 !important;
+  cursor: not-allowed !important;
+  border-color: #999999 !important;
+}
+
+/* Specific styles for fullscreen modes */
+.bpx-state-fullscreen #bilibili-danmaku-jumper-button,
+.bpx-state-web-fullscreen #bilibili-danmaku-jumper-button,
+.bilibili-player-fullscreen #bilibili-danmaku-jumper-button,
+.bilibili-player-web-fullscreen #bilibili-danmaku-jumper-button {
+  /* In fullscreen, ensure the button stays compact */
+  padding: 3px 6px !important;
+  font-size: 11px !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+/* Fix button positioning in control bar */
+.bpx-player-control-bottom #bilibili-danmaku-jumper-button,
+.bilibili-player-video-control-bottom #bilibili-danmaku-jumper-button {
+  /* Ensure proper alignment */
+  vertical-align: middle !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Style for button in left control area */
+.bpx-player-control-bottom-left #bilibili-danmaku-jumper-button,
+.bilibili-player-video-control-bottom-left #bilibili-danmaku-jumper-button {
+  /* Keep button compact and aligned with time display */
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+/* Prevent button from stretching or interfering with other controls */
+#bilibili-danmaku-jumper-button {
+  flex: 0 0 auto !important;
+  min-width: unset !important;
+  max-width: 80px !important;
+  z-index: 1 !important; /* Stay above other elements but below danmaku input */
+}
+
+/* Styling for a potential feedback message area, if not using button text */
+.danmaku-jumper-feedback {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  z-index: 99999; /* Ensure it's on top */
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.danmaku-jumper-feedback.show {
+  opacity: 1;
+}
+
