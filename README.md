@@ -18,7 +18,7 @@
 
 ## ✨ 功能特点
 
-<table>
+<table align="center">
   <tr>
     <td align="center" width="25%">
       <h3>🎯 智能识别</h3>
@@ -41,14 +41,43 @@
 
 ## 🌟 支持多种弹幕格式
 
-| 类型 | 示例 | 说明 |
-|------|------|------|
-| **跳转指令** | `空降1:30`、`跳过片头2:15` | 直接指定跳转时间 |
-| **时间标记** | `1:30mark`、`2分15秒处` | 标记特定时间点 |
-| **感谢时间** | `谢谢八分十五郎` | 感谢提供的时间点 |
-| **导航提示** | `进度条君2:30`、`指路3分钟` | 引导观众跳转 |
-| **中文时间** | `三分二十秒`、`一分半` | 自动转换为数字 |
-| **纯秒数** | `90秒`、`120s` | 支持多种单位 |
+<table align="center">
+  <tr>
+    <th>类型</th>
+    <th>示例</th>
+    <th>说明</th>
+  </tr>
+  <tr>
+    <td><strong>跳转指令</strong></td>
+    <td><code>空降1:30</code>、<code>跳过片头2:15</code></td>
+    <td>直接指定跳转时间</td>
+  </tr>
+  <tr>
+    <td><strong>时间标记</strong></td>
+    <td><code>1:30mark</code>、<code>2分15秒处</code></td>
+    <td>标记特定时间点</td>
+  </tr>
+  <tr>
+    <td><strong>感谢时间</strong></td>
+    <td><code>谢谢八分十五郎</code></td>
+    <td>感谢提供的时间点</td>
+  </tr>
+  <tr>
+    <td><strong>导航提示</strong></td>
+    <td><code>进度条君2:30</code>、<code>指路3分钟</code></td>
+    <td>引导观众跳转</td>
+  </tr>
+  <tr>
+    <td><strong>中文时间</strong></td>
+    <td><code>三分二十秒</code>、<code>一分半</code></td>
+    <td>自动转换为数字</td>
+  </tr>
+  <tr>
+    <td><strong>纯秒数</strong></td>
+    <td><code>90秒</code>、<code>120s</code></td>
+    <td>支持多种单位</td>
+  </tr>
+</table>
 
 ## 🛠️ 快速开始
 
@@ -142,12 +171,33 @@ python crawler.py BV1234567890 your_sessdata output.json
 
 ## 📈 性能指标
 
-| 指标 | 数值 | 说明 |
-|------|------|------|
-| 响应时间 | < 1s | 缓存命中时 |
-| 识别准确率 | 95%+ | 基于测试集 |
-| 内存占用 | < 10MB | 典型使用场景 |
-| 支持弹幕量 | 10000+ | 单视频处理上限 |
+<table align="center">
+  <tr>
+    <th>指标</th>
+    <th>数值</th>
+    <th>说明</th>
+  </tr>
+  <tr>
+    <td>响应时间</td>
+    <td>&lt; 1s</td>
+    <td>缓存命中时</td>
+  </tr>
+  <tr>
+    <td>识别准确率</td>
+    <td>95%+</td>
+    <td>基于测试集</td>
+  </tr>
+  <tr>
+    <td>内存占用</td>
+    <td>&lt; 10MB</td>
+    <td>典型使用场景</td>
+  </tr>
+  <tr>
+    <td>支持弹幕量</td>
+    <td>10000+</td>
+    <td>单视频处理上限</td>
+  </tr>
+</table>
 
 ## 🤝 贡献指南
 
