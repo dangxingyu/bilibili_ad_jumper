@@ -14,6 +14,10 @@
   <strong>智能识别弹幕时间戳，一键跳过广告片段</strong>
 </p>
 
+<p align="center">
+  <a href="https://dangxingyu.github.io/bilibili_ad_jumper/" target="_blank"><strong>🌐 项目主页</strong></a>
+</p>
+
 ---
 
 ## ✨ 功能特点
