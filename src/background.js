@@ -368,7 +368,11 @@ const keywordPatterns = [
   
   // Pattern 12: 指挥部相关
   // 例子：指挥部1:30、指挥部2分30秒
-  new RegExp(`指挥部[^\\d]*?(${TIME_PATTERN_ALL})`, 'i')
+  new RegExp(`指挥部[^\\d]*?(${TIME_PATTERN_ALL})`, 'i'),
+  
+  // Pattern 13: 独立时间格式（仅时间，无其他内容）
+  // 例子：七分15秒、3分20秒、1:30
+  new RegExp(`^(${TIME_PATTERN_ALL})$`)
 ];
 
 // Main pattern matching function with time clustering

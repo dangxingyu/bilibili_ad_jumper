@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "B站空降广告跳转助手",
-  "version": "1.1",
-  "description": "自动识别B站视频中的\"空降\"弹幕，一键跳转到指定时间点，轻松跳过广告",
+  "version": "1.2.1",
+  "description": "自动识别B站视频中的\"空降\"弹幕，一键跳转到指定时间点，轻松跳过广告。支持更多时间格式识别模式",
   "permissions": [
     "activeTab",
     "storage",

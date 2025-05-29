@@ -28,7 +28,10 @@ const keywordPatterns = [
   /(?:谢谢|感谢|谢|多谢|感恩|鸣谢|致谢).*?(\d{1,2})分(\d{1,2})[^\d]*?(?:郎|君|酱|兄|哥|姐|妹|侠|总|爷|奶|老师|大佬|大神)/i,
   
   // Pattern 20: Simple pattern for "X分X郎" format (我是八分十五郎)
-  /(\d{1,2})分(\d{1,2})郎/
+  /(\d{1,2})分(\d{1,2})郎/,
+  
+  // Pattern 21: Standalone time format (just time, nothing else - e.g., "七分15秒", "3分20秒")
+  /^(\d{1,3}[:：分]\d{1,2}(?:[:：秒]\d{1,2})?|\d+[秒sS]|\d{1,3}分(?:\d{1,2}秒)?)$/
 ];
 
 // Find patterns with two capture groups

@@ -249,7 +249,11 @@ python crawler.py BV1234567890 your_sessdata output.json
 
 ## 📋 更新日志
 
-### v1.2.0 (Latest)
+### v1.2.1 (Latest)
+- 🎯 新增独立时间格式识别（如"七分15秒"）
+- 📝 支持更多时间戳模式
+
+### v1.2.0
 - 🎯 新增中文数字识别
 - 🐍 新增 Python 爬虫工具
 - ⚡ 优化缓存性能
